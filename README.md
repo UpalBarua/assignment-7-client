@@ -28,6 +28,6 @@ Our donation website utilizes the following tools and technologies:
 
 ## Live Demo
 
-Check out the live demo of our donation website [here](https://assignment-7-client.vercel.app/donations).
+Check out the live demo of our donation website [here](https://assignment-7-client.vercel.app/).
 
 Thank you for visiting and supporting our cause! Together, we can make a difference.
