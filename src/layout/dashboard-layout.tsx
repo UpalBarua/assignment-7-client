@@ -80,7 +80,7 @@ export function DashboardLayout() {
           </Link>
         </nav>
       </aside>
-      <section className="md:absolute inset-0 md:left-[calc(22rem)] md:px-8 md:py-10 py-4 px-4">
+      <section className="md:absolute min-h-screen inset-0 md:left-[calc(22rem)] md:px-8 md:py-10 py-4 px-4">
         <Outlet />
       </section>
     </main>

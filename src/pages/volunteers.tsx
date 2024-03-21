@@ -76,7 +76,7 @@ export function Volunteers() {
 
   return (
     <section className="container max-w-5xl mx-auto px-4 pt-[max(1rem,_2.5dvw)]">
-      <Heading className="text-center">Volunteers</Heading>
+      <Heading className="text-center">Become a Volunteer</Heading>
       <div className="grid grid-cols-1 rounded-md shadow-md border-foreground/10 sm:border sm:grid-cols-2">
         <div className="hidden sm:block">
           <img
@@ -150,7 +150,7 @@ export function Volunteers() {
               ) : (
                 <Check className="w-5 h-5" />
               )}
-              <span>Publish Post</span>
+              <span>Submit Form</span>
             </Button>
           </div>
         </form>
