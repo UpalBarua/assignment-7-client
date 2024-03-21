@@ -7,6 +7,7 @@ import { RouteGuard } from "@/layout/protectedRoute";
 import { DonationDetails } from "@/pages/donation-details";
 import { Donations } from "@/pages/donations";
 import { Home } from "@/pages/home";
+import { Leaderboard } from "@/pages/leaderboard";
 import { Login } from "@/pages/login";
 import { NotFound } from "@/pages/not-found";
 import { Register } from "@/pages/register";
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/donations",
         element: <Donations />,
+      },
+      {
+        path: "/leaderboard",
+        element: <Leaderboard />,
       },
       {
         path: "/donations/:id",

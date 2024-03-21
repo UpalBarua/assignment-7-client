@@ -47,14 +47,12 @@ export function Navbar() {
         )}
       >
         <Link to="/">Home</Link>
+        <Link to="/donations">All donations</Link>
+        <Link to="/leaderboard">Leaderboard</Link>
         {!token ? (
-          <Fragment>
-            <Link to="/donations">All donations</Link>
-            <Link to="/login">Login</Link>
-          </Fragment>
+          <Link to="/login">Login</Link>
         ) : (
           <Fragment>
-            <Link to="/donations">All donation</Link>
             <Link to="/dashboard">Dashboard</Link>
             <button className="w-max text-red-500" onClick={handleLogout}>
               Logout

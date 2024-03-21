@@ -97,3 +97,43 @@ export const donationCategories = [
   "Food",
   "Healthcare",
 ] as const;
+
+export const topDonors = [
+  {
+    name: "John Doe",
+    amount: "$7500",
+    quote: "Together, we can make a difference.",
+    image: "https://source.unsplash.com/random/401x400?man",
+  },
+  {
+    name: "Jane Smith",
+    amount: "$6000",
+    quote: "Every little bit helps!",
+    image: "https://source.unsplash.com/random/402x400?woman",
+  },
+  {
+    name: "David Johnson",
+    amount: "$8000",
+    quote: "Grateful for the opportunity to give back.",
+    image: "https://source.unsplash.com/random/403x400?man",
+  },
+  {
+    name: "Emily Davis",
+    amount: "$7000",
+    quote: "Let's support each other in times of need.",
+    image: "https://source.unsplash.com/random/404x400?woman",
+  },
+  {
+    name: "Michael Brown",
+    amount: "$9000",
+    quote: "Small acts, when multiplied by millions, can transform the world.",
+    image: "https://source.unsplash.com/random/405x400?man",
+  },
+  {
+    name: "Sophia Miller",
+    amount: "$8500",
+    quote:
+      "Giving is not just about making a donation, it's about making a difference.",
+    image: "https://source.unsplash.com/random/406x400?woman",
+  },
+] as const;
