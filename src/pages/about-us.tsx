@@ -2,16 +2,15 @@ import { useGetVolunteersQuery } from "@/redux/api/api";
 import { Heading } from "@/components/ui/heading";
 import { Volunteer } from "@/types";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { PageLoader } from "@/components/ui/page-loader";
 
 export function AboutUs() {
   const { data: volunteers, isLoading } = useGetVolunteersQuery("");
 
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
+  if (isLoading) return <PageLoader />;
 
   return (
-    <section className="max-w-7xl container mx-auto px-4">
+    <section className="max-w-7xl container mx-auto px-4 pt-[max(1rem,_2.5dvw)]">
       <Heading className="text-center">Our Volunteers</Heading>
       <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         {volunteers?.map(

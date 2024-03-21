@@ -3,7 +3,7 @@ import { m } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="container max-w-7xl py-6 md:py-8 md:gap-x-10 mx-auto px-4 grid grid-cols-1 md:grid-cols-2">
+    <section className="container max-w-7xl py-6 md:py-8 md:gap-x-10 mx-auto px-4 lg:py-10 grid grid-cols-1 md:grid-cols-2">
       <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

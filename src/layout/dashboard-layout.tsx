@@ -15,7 +15,7 @@ export function DashboardLayout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <main className="relative min-h-screen">
+    <main className="relative min-h-screen dark:bg-background dark:text-foreground/90">
       <div className="flex md:hidden items-center px-4 py-4 sm:py-6 container max-w-7xl mx-auto gap-x-4">
         <Button
           size="icon"

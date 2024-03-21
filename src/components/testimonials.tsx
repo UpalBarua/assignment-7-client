@@ -24,8 +24,8 @@ export function Testimonials() {
       <Heading>Our Top Donners!</Heading>
       <ul className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {testimonials
-          .slice(0, 6)
-          ?.map((testimonial: Testimonial) => (
+          ?.slice(0, 6)
+          .map((testimonial: Testimonial) => (
             <TestimonialCard key={testimonial._id} {...testimonial} />
           ))}
       </ul>

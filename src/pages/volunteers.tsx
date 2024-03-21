@@ -62,20 +62,20 @@ export function Volunteers() {
       };
 
       addVolunteer(newVolunteer);
-      toast.success("New Donation Added");
+      toast.success("New volunteer Added");
 
       reset();
       setImageFile(null);
     } catch (error) {
       console.log(error);
-      toast.error("Failed to Add New Donation");
+      toast.error("Failed to Add New volunteer");
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <section className="container max-w-5xl mx-auto px-4">
+    <section className="container max-w-5xl mx-auto px-4 pt-[max(1rem,_2.5dvw)]">
       <Heading className="text-center">Volunteers</Heading>
       <div className="grid grid-cols-1 rounded-md shadow-md border-foreground/10 sm:border sm:grid-cols-2">
         <div className="hidden sm:block">

@@ -1,12 +1,11 @@
+import { CreateTestimonial } from "@/admin/create-testimonial";
 import { Dashboard } from "@/admin/dashboard";
-import { AboutUs } from "@/pages/about-us";
-import { Volunteers } from "@/pages/volunteers";
 import { DonationManagement } from "@/admin/donation-management";
 import { NewDonation } from "@/admin/new-donation";
-import { Testimonials } from "@/pages/testimonials";
 import { DashboardLayout } from "@/layout/dashboard-layout";
 import { MainLayout } from "@/layout/main-layout";
 import { RouteGuard } from "@/layout/protectedRoute";
+import { AboutUs } from "@/pages/about-us";
 import { Community } from "@/pages/community";
 import { DonationDetails } from "@/pages/donation-details";
 import { Donations } from "@/pages/donations";
@@ -15,8 +14,9 @@ import { Leaderboard } from "@/pages/leaderboard";
 import { Login } from "@/pages/login";
 import { NotFound } from "@/pages/not-found";
 import { Register } from "@/pages/register";
+import { Testimonials } from "@/pages/testimonials";
+import { Volunteers } from "@/pages/volunteers";
 import { createBrowserRouter } from "react-router-dom";
-import { CreateTestimonial } from "@/admin/create-testimonial";
 
 const router = createBrowserRouter([
   {
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         element: <DonationDetails />,
         loader: ({ params }) =>
           fetch(
-            `https://l2-b2-assignment-6-backend-upal-barua.vercel.app/api/v1/donation/${params?.id}`,
+            `https://assignment-7-server.vercel.app/api/v1/donation/${params?.id}`,
           ),
       },
       {

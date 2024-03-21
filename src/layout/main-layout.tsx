@@ -4,8 +4,8 @@ import { Navbar } from "./navbar";
 
 export function MainLayout() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="flex-1">
+    <div className="flex flex-col min-h-screen dark:bg-background dark:text-foreground/90">
+      <div className="flex-1 ">
         <Navbar />
         <Outlet />
       </div>

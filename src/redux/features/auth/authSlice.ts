@@ -5,6 +5,7 @@ type TAuthState = {
   user: null | object;
   token: null | string;
 };
+
 const initialState: TAuthState = {
   user: null,
   token: null,

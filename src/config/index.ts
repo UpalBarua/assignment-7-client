@@ -1,5 +1,12 @@
-import { Ambulance, CookingPot, Map, Target } from "lucide-react";
-import { Facebook, Twitter, Instagram } from "lucide-react";
+import {
+  Ambulance,
+  CookingPot,
+  Facebook,
+  Instagram,
+  Map,
+  Target,
+  Twitter,
+} from "lucide-react";
 
 export const offerings = [
   {
@@ -25,45 +32,6 @@ export const offerings = [
     title: "Career Development",
     content:
       "Empowering individuals through skill-building workshops, vocational training, job placement assistance, and entrepreneurship support, fostering economic stability and growth within communities, and creating pathways to sustainable livelihoods and financial independence.",
-  },
-] as const;
-
-export const testimonials = [
-  {
-    name: "John Doe",
-    image: "https://source.unsplash.com/random/400x400?man",
-    review:
-      "This platform is fantastic for donations. I appreciate the effort put into it. There's a wide range of people involved, all dedicated to making a difference.",
-  },
-  {
-    name: "Jane Smith",
-    image: "https://source.unsplash.com/random/401x401?woman",
-    review:
-      "I'm impressed by this donation platform. It's a great initiative, and it's heartwarming to see so many people actively involved in making a difference.",
-  },
-  {
-    name: "Emily Johnson",
-    image: "https://source.unsplash.com/random/402x402?female",
-    review:
-      "I'm grateful for this platform, which offers a seamless way to contribute to those in need. The dedication of everyone involved is truly commendable.",
-  },
-  {
-    name: "Michael Brown",
-    image: "https://source.unsplash.com/random/403x403?man",
-    review:
-      "This platform is making a significant impact with its donation efforts. It's heartening to see so many people come together for a common cause.",
-  },
-  {
-    name: "Sophia Miller",
-    image: "https://source.unsplash.com/random/404x404?woman",
-    review:
-      "I'm proud to support this donation platform. It's inspiring to witness the dedication and hard work of everyone involved in making a difference.",
-  },
-  {
-    name: "William Taylor",
-    image: "https://source.unsplash.com/random/405x405?man",
-    review:
-      "I'm amazed by the positive impact this platform has. It's heartwarming to see so many people come together for such a noble cause.",
   },
 ] as const;
 
@@ -136,43 +104,13 @@ export const topDonors = [
       "Giving is not just about making a donation, it's about making a difference.",
     image: "https://source.unsplash.com/random/406x400?woman",
   },
-] as const;
+];
 
-export const gratitudeMessages = [
-  {
-    name: "Alice Johnson",
-    comment:
-      "Thank you to everyone who has contributed. Your generosity is truly appreciated!",
-    postDate: "2024-03-21T13:30:00.000Z",
-  },
-  {
-    name: "Bob Smith",
-    comment:
-      "Feeling blessed to be a part of such a supportive community. Thank you for all your help!",
-    postDate: "2024-03-21T13:30:00.000Z",
-  },
-  {
-    name: "Eva Martinez",
-    comment:
-      "Grateful for the kindness and compassion shown by everyone during these challenging times.",
-    postDate: "2024-03-21T13:30:00.000Z",
-  },
-  {
-    name: "Max Brown",
-    comment:
-      "A big thank you to all the volunteers for their hard work and dedication!",
-    postDate: "2024-03-21T13:30:00.000Z",
-  },
-  {
-    name: "Lily Clark",
-    comment:
-      "Thank you for your support and encouragement. It means the world to me!",
-    postDate: "2024-03-21T13:30:00.000Z",
-  },
-  {
-    name: "Olivia Lee",
-    comment:
-      "Heartfelt thanks to everyone who has reached out with their support and love. We're in this together!",
-    postDate: "2024-03-21T13:30:00.000Z",
-  },
+export const navLinks = [
+  { link: "/donations", label: "All donations" },
+  { link: "/leaderboard", label: "Leaderboard" },
+  { link: "/community", label: "Community" },
+  { link: "/testimonials", label: "Testimonials" },
+  { link: "/volunteers", label: "Volunteers" },
+  { link: "/about-us", label: "About Us" },
 ] as const;
