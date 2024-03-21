@@ -137,3 +137,42 @@ export const topDonors = [
     image: "https://source.unsplash.com/random/406x400?woman",
   },
 ] as const;
+
+export const gratitudeMessages = [
+  {
+    name: "Alice Johnson",
+    comment:
+      "Thank you to everyone who has contributed. Your generosity is truly appreciated!",
+    postDate: "2024-03-21T13:30:00.000Z",
+  },
+  {
+    name: "Bob Smith",
+    comment:
+      "Feeling blessed to be a part of such a supportive community. Thank you for all your help!",
+    postDate: "2024-03-21T13:30:00.000Z",
+  },
+  {
+    name: "Eva Martinez",
+    comment:
+      "Grateful for the kindness and compassion shown by everyone during these challenging times.",
+    postDate: "2024-03-21T13:30:00.000Z",
+  },
+  {
+    name: "Max Brown",
+    comment:
+      "A big thank you to all the volunteers for their hard work and dedication!",
+    postDate: "2024-03-21T13:30:00.000Z",
+  },
+  {
+    name: "Lily Clark",
+    comment:
+      "Thank you for your support and encouragement. It means the world to me!",
+    postDate: "2024-03-21T13:30:00.000Z",
+  },
+  {
+    name: "Olivia Lee",
+    comment:
+      "Heartfelt thanks to everyone who has reached out with their support and love. We're in this together!",
+    postDate: "2024-03-21T13:30:00.000Z",
+  },
+] as const;

@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { HandCoins, HandHeart, Home, Menu, PackagePlus } from "lucide-react";
+import {
+  HandCoins,
+  HandHeart,
+  Home,
+  Menu,
+  MessageSquareText,
+  PackagePlus,
+} from "lucide-react";
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
@@ -63,6 +70,13 @@ export function DashboardLayout() {
           >
             <PackagePlus className="h-5 w-5" />
             <span>Create Donation</span>
+          </Link>
+          <Link
+            to="/dashboard/create-testimonial"
+            className="flex md:px-6 px-4 py-2 items-center gap-x-2"
+          >
+            <MessageSquareText className="h-5 w-5" />
+            <span>Create Testimonial</span>
           </Link>
         </nav>
       </aside>

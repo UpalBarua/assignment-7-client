@@ -1,10 +1,17 @@
-import { testimonials } from "@/config";
-import { Heading } from "./ui/heading";
-import { useInView } from "react-intersection-observer";
+import { useGetTestimonialsQuery } from "@/redux/api/api";
+import { Testimonial } from "@/types";
 import { m } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { TestimonialCard } from "./testimonial-card";
+import { Heading } from "./ui/heading";
 
 export function Testimonials() {
+  const { data: testimonials, isLoading } = useGetTestimonialsQuery("");
   const { ref, inView } = useInView();
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <m.section
@@ -16,24 +23,11 @@ export function Testimonials() {
     >
       <Heading>Our Top Donners!</Heading>
       <ul className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {testimonials.map(({ name, image, review }) => (
-          <li
-            key={name}
-            className="bg-secondary flex flex-col p-4 md:p-6 border border-foreground/10 rounded-md shadow-md"
-          >
-            <p className="leading-relaxed flex-1 text-foreground/80">
-              {review}
-            </p>
-            <div className="flex items-center pt-6 gap-x-4">
-              <img
-                src={image}
-                alt={name}
-                className="w-10 h-10 rounded-full object-center object-cover border border-foreground/20"
-              />
-              <h3 className="text-medium text-foreground">{name}</h3>
-            </div>
-          </li>
-        ))}
+        {testimonials
+          .slice(0, 6)
+          ?.map((testimonial: Testimonial) => (
+            <TestimonialCard key={testimonial._id} {...testimonial} />
+          ))}
       </ul>
     </m.section>
   );

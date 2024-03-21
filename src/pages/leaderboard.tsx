@@ -18,7 +18,7 @@ export function Leaderboard() {
               alt={name}
             />
             <div className="px-3 py-2 sm:p-4 space-y-2">
-              <p className=" italic">{quote}</p>
+              <p className="leading-relaxed italic">{quote}</p>
               <div className="flex items-center justify-between">
                 <h3 className="font-medium">{name}</h3>
                 <div className="flex gap-x-2 items-center">

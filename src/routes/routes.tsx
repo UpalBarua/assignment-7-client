@@ -1,9 +1,11 @@
 import { Dashboard } from "@/admin/dashboard";
 import { DonationManagement } from "@/admin/donation-management";
 import { NewDonation } from "@/admin/new-donation";
+import { Testimonials } from "@/pages/testimonials";
 import { DashboardLayout } from "@/layout/dashboard-layout";
 import { MainLayout } from "@/layout/main-layout";
 import { RouteGuard } from "@/layout/protectedRoute";
+import { Community } from "@/pages/community";
 import { DonationDetails } from "@/pages/donation-details";
 import { Donations } from "@/pages/donations";
 import { Home } from "@/pages/home";
@@ -12,6 +14,7 @@ import { Login } from "@/pages/login";
 import { NotFound } from "@/pages/not-found";
 import { Register } from "@/pages/register";
 import { createBrowserRouter } from "react-router-dom";
+import { CreateTestimonial } from "@/admin/create-testimonial";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "/leaderboard",
         element: <Leaderboard />,
+      },
+      {
+        path: "/community",
+        element: <Community />,
+      },
+      {
+        path: "/testimonials",
+        element: <Testimonials />,
       },
       {
         path: "/donations/:id",
@@ -67,6 +78,10 @@ const router = createBrowserRouter([
       {
         path: "create-donation",
         element: <NewDonation />,
+      },
+      {
+        path: "create-testimonial",
+        element: <CreateTestimonial />,
       },
     ],
   },

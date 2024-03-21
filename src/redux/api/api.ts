@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const baseApi = createApi({
   reducerPath: "baseApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://l2-b2-assignment-6-backend-upal-barua.vercel.app/api/v1",
+    baseUrl: "http://localhost:5000/api/v1/",
   }),
 
   endpoints: (builder) => ({
@@ -58,9 +58,39 @@ export const baseApi = createApi({
       }),
       invalidatesTags: ["donation"],
     }),
+    getComments: builder.query({
+      query: () => ({
+        url: "/comments",
+        method: "GET",
+      }),
+      providesTags: ["comments"],
+    }),
+    addComment: builder.mutation({
+      query: (data) => ({
+        url: "/comments",
+        method: "POST",
+        body: data,
+      }),
+      invalidatesTags: ["comments"],
+    }),
+    getTestimonials: builder.query({
+      query: () => ({
+        url: "/testimonials",
+        method: "GET",
+      }),
+      providesTags: ["testimonials"],
+    }),
+    addTestimonial: builder.mutation({
+      query: (data) => ({
+        url: "/testimonials",
+        method: "POST",
+        body: data,
+      }),
+      invalidatesTags: ["testimonials"],
+    }),
   }),
 
-  tagTypes: ["donation"],
+  tagTypes: ["donation", "comments", "testimonials"],
 });
 
 export const {
@@ -71,4 +101,8 @@ export const {
   useDeleteDonationMutation,
   useCreateUserMutation,
   useLoginUserMutation,
+  useGetCommentsQuery,
+  useAddCommentMutation,
+  useGetTestimonialsQuery,
+  useAddTestimonialMutation,
 } = baseApi;

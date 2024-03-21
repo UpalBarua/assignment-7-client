@@ -49,6 +49,8 @@ export function Navbar() {
         <Link to="/">Home</Link>
         <Link to="/donations">All donations</Link>
         <Link to="/leaderboard">Leaderboard</Link>
+        <Link to="/community">Community</Link>
+        <Link to="/testimonials">Testimonials</Link>
         {!token ? (
           <Link to="/login">Login</Link>
         ) : (
