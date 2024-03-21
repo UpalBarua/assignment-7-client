@@ -15,7 +15,7 @@ export function DashboardLayout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <main className="relative min-h-screen dark:bg-background dark:text-foreground/90">
+    <main className="relative h-full min-h-screen dark:bg-background dark:text-foreground/90">
       <div className="flex md:hidden items-center px-4 py-4 sm:py-6 container max-w-7xl mx-auto gap-x-4">
         <Button
           size="icon"
@@ -80,7 +80,7 @@ export function DashboardLayout() {
           </Link>
         </nav>
       </aside>
-      <section className="md:absolute min-h-screen inset-0 md:left-[calc(22rem)] md:px-8 md:py-10 py-4 px-4">
+      <section className="md:fixed overflow-y-scroll min-h-screen h-full inset-0 md:left-[calc(22rem)] md:px-8 md:py-10 py-4 px-4">
         <Outlet />
       </section>
     </main>

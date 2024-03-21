@@ -6,7 +6,7 @@ export function App() {
   const isDarkMode = useAppSelector((content) => content.ui.isDarkMode);
 
   return (
-    <div className={isDarkMode ? "dark" : ""}>
+    <div className={isDarkMode ? "dark" : "" + "relative"}>
       <RouterProvider router={router} />
     </div>
   );
