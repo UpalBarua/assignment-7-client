@@ -22,3 +22,13 @@ export type Testimonial = {
   image: string;
   review: string;
 };
+
+export type Volunteer = {
+  _id?: string;
+  name: string;
+  email: string;
+  phone: string;
+  location: string;
+  objective: string;
+  image: string;
+};

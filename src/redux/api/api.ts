@@ -88,9 +88,24 @@ export const baseApi = createApi({
       }),
       invalidatesTags: ["testimonials"],
     }),
+    getVolunteers: builder.query({
+      query: () => ({
+        url: "/volunteers",
+        method: "GET",
+      }),
+      providesTags: ["volunteers"],
+    }),
+    addVolunteers: builder.mutation({
+      query: (data) => ({
+        url: "/volunteers",
+        method: "POST",
+        body: data,
+      }),
+      invalidatesTags: ["volunteers"],
+    }),
   }),
 
-  tagTypes: ["donation", "comments", "testimonials"],
+  tagTypes: ["donation", "comments", "testimonials", "volunteers"],
 });
 
 export const {
@@ -105,4 +120,6 @@ export const {
   useAddCommentMutation,
   useGetTestimonialsQuery,
   useAddTestimonialMutation,
+  useGetVolunteersQuery,
+  useAddVolunteersMutation,
 } = baseApi;

@@ -1,4 +1,6 @@
 import { Dashboard } from "@/admin/dashboard";
+import { AboutUs } from "@/pages/about-us";
+import { Volunteers } from "@/pages/volunteers";
 import { DonationManagement } from "@/admin/donation-management";
 import { NewDonation } from "@/admin/new-donation";
 import { Testimonials } from "@/pages/testimonials";
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: "/community",
         element: <Community />,
+      },
+      {
+        path: "/volunteers",
+        element: <Volunteers />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
       },
       {
         path: "/testimonials",
